@@ -11,7 +11,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/')
 def home():
     return render_template('index.html')
 

@@ -52,8 +52,8 @@
 
       <div class="newsletter">
 
-        <form action="#">
-
+        <form action="" action='' method="post" >
+          {{form.hidden_tag()}}
           <div class="newsletter-header">
 
             <h3 class="newsletter-title">Super Sale</h3>
@@ -64,7 +64,9 @@
 
           </div>
 
-          <input type="text" class="email-field" placeholder="Phone Number" >
+          {{form.number(class="form-control",placeholder="Phone Number",id="floatingInput", style="border-radius:10px; padding:10px;") }}
+        
+          
 
           <button type="submit" class="btn-newsletter">Send</button>
 
@@ -189,7 +191,7 @@
       <div class="container">
 
         <a href="#" class="header-logo">
-         <!-- <img src="/static/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">--><h4 style="color:#000;">centralmal.com</h4>
+         <h2 style="color:#000;">centralmal.com</h2>
         </a>
 
         <div class="header-search-container">
@@ -658,11 +660,11 @@
         <div class="slider-container has-scrollbar">
           <div class="slider-item">
 
-            <img src="/static/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/3ce709113389695.60269c221352f.jpg" alt="women's latest fashion sale" class="banner-img">
 
             <div class="banner-content">
 
-              <p class="banner-subtitle">Lydia</p>
+            <!---  <p class="banner-subtitle">Lydia</p>
 
               <h2 class="banner-title">latest fashion sale</h2>
 
@@ -670,7 +672,7 @@
                 starting at GH <b>20</b>.00
               </p>
 
-              <a href="#" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Shop now</a>-->
 
             </div>
 
@@ -678,19 +680,19 @@
 
           <div class="slider-item">
 
-            <img src="/static/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
+            <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/discounts-coupons-offers-types.jpg?v=1572550436" alt="modern sunglasses" class="banner-img">
 
             <div class="banner-content">
 
-              <p class="banner-subtitle">Trending accessories</p>
+              <p class="banner-subtitle"></p>
 
-              <h2 class="banner-title">Discount</h2>
+              <!--<h2 class="banner-title">Discount</h2>
 
               <p class="banner-text">
                 starting at Gh <b>15</b>.00
               </p>
 
-              <a href="#" class="banner-btn">Shop now</a>
+              <a href="#" class="banner-btn">Shop now</a>-->
 
             </div>
 
@@ -698,19 +700,11 @@
 
           <div class="slider-item">
 
-            <img src="/static/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
+            <img src="https://www.flycart.org/wp-content/uploads/2022/07/how-to-create-coupons-and-coupon-codes-in-woocommerce.jpg" alt="new fashion summer sale" class="banner-img">
 
             <div class="banner-content">
 
-              <p class="banner-subtitle">Sale Offer</p>
-
-              <h2 class="banner-title">Iphone</h2>
-
-              <p class="banner-text">
-                starting at Gh <b>629</b>.00
-              </p>
-
-              <a href="#" class="banner-btn">Shop now</a>
+             
 
             </div>
 
@@ -884,15 +878,16 @@
         -->
 
         <div class="sidebar  has-scrollbar" data-mobile-menu>
-
+          
           <div class="sidebar-category">
 
             <div class="sidebar-top">
-              <h2 class="sidebar-title">Find An Item</h2>
+              <h2 class="sidebar-title"></h2>
 
               <button class="sidebar-close-btn" data-mobile-menu-close-btn>
                 <ion-icon name="close-outline"></ion-icon>
               </button>
+            
             </div>
             
 
@@ -901,7 +896,8 @@
             <p class="newsletter-desc">
               <b>Cant find what you want?</b> <br>Send us what you want, our riders will deliver it to you with ease.
             </p><br>
-          <input type="text" class="email-field" placeholder="Phone Number"  style="box-shadow:0 2px 10px -3px #117964;">
+            <input type="text" name="number" class="email-field" placeholder="Phone Number"  style="box-shadow:0 2px 10px -3px #117964;">
+            <input type="text" name="name" class="email-field" placeholder="Name"  style="box-shadow:0 2px 10px -3px #117964;">
 
           <textarea name="comment" class="email-field"  placeholder="Items"  style=" width:260px; height:100px; border-style:none; box-shadow:0 2px 10px -3px #117964;"></textarea><br>
 

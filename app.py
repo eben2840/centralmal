@@ -1,4 +1,4 @@
-import profile
+
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, redirect, render_template, url_for,request
 import urllib.request, urllib.parse
